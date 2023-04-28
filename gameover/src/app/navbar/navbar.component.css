@@ -1,0 +1,29 @@
+.navbar{
+    background-color: #272b30;
+    box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+
+
+}
+.logout{
+
+    border: solid 1px #0D6EFD;
+    border-radius: 5px;
+    padding: 8px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+li a{
+    color: #AAAAAA;
+}
+.dropdown-menu{
+    background-color: #272b30;
+}
+.nav-item a{
+    color: #AAAAAA;
+}
+.navbar-brand{
+    font-family: "Xanh Mono", monospace;
+}

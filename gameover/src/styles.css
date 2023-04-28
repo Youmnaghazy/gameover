@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+
+.cursor-pointer
+{
+    cursor: pointer;
+}
+.body{
+    background-color: #272b30;
+    width: 100%; 
+    height: 100vh;
+    
+    }

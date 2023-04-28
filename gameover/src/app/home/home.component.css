@@ -1,0 +1,85 @@
+header{
+    background-image: url(../../assets/images/paladins.b44d33d6e7ee1ba8.png);
+    background-position: center center;
+    background-size: cover;
+}
+.boody{
+    height: 120vh;
+    background-color: #1C1E22;
+}
+.header{
+ 
+        background-color: #1C1E22;
+        text-align: center;
+        padding: 50px;
+       
+        color: #6C757D;
+}
+span{
+    color: #49ACFF;
+}
+.header h1{
+    color: #AAAAAA;
+}
+.btnheader {
+    background-color: rgba(0, 0, 0, 0.01);
+    border: #6C757D solid 1px;
+    border-radius: 7px;
+    padding: 10px;
+    color: #6C757D;
+    cursor: pointer;
+
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+a{
+    text-decoration: none;
+    color: #6C757D;
+}
+.text
+{
+    display: flex;
+    color: #AAAAAA;
+}
+.icon{
+    font-size: 30px;
+}
+.card{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 0;
+    
+}
+.card-body:hover{
+    cursor: pointer;
+    transform: scale(1.09);
+    -webkit-transform: scale(1.09);
+    -moz-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    -o-transform: scale(1.09);
+}
+.card-body{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    transition: transform .9s;
+    -webkit-transition: transform .9s;
+    -moz-transition: transform .9s;
+    -ms-transition: transform .9s;
+    -o-transition: transform .9s;
+}
+.body-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+}
+.card-text{
+    color: #AAAAAA;
+    font-size: 23.5px;
+}
+.btn{
+    color: white;
+    font-weight: bold;
+}

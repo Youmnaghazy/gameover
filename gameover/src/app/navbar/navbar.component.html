@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-sm navbar-light">
+      <div class="container">
+        <img src="../../assets/images/logo (1).png" alt="" width="80px" height="50px">
+        <a class="navbar-brand text-white" href="#">Game Over</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li  *ngIf="isLogin" class="nav-item">
+                    <a class="nav-link active text-white" href="#" aria-current="page" routerLink="home">Home <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li  *ngIf="isLogin" class="nav-item">
+                    <a class="nav-link active " href="#" aria-current="page" routerLink="all">All<span class="visually-hidden">(current)</span></a>
+                </li>
+                <li  *ngIf="isLogin" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Platforms</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item"  routerLink="platforms" href="#">pc</a>
+                        <a class="dropdown-item" routerLink="browser" href="#">browser</a>
+                    </div>
+                </li>
+                <li  *ngIf="isLogin" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort-by</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" routerLink="sortby" href="#">release-date</a>
+                        <a class="dropdown-item" routerLink="sortpopularity" href="#">popularity</a>
+                        <a class="dropdown-item" routerLink="alphabetical" href="#">alphabetical</a>
+                        <a class="dropdown-item" routerLink="sortrelevance" href="#">relevance</a>
+                    </div>
+                </li>
+                <li  *ngIf="isLogin" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Categories</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item"  routerLink="racing"  href="#">racing</a>
+                        <a class="dropdown-item"  routerLink="sports"  href="#">sports</a>
+                        <a class="dropdown-item"  routerLink="social"  href="#">social</a>
+                        <a class="dropdown-item"  routerLink="shooter"  href="#">shooter</a>                        
+                        <a class="dropdown-item"  routerLink="open"  href="#">open-world</a>
+                        <a class="dropdown-item" routerLink="zombie"  href="#">zombie</a>
+                        <a class="dropdown-item" routerLink="rpg"  href="#">action-rpg</a>
+                        <a class="dropdown-item"  routerLink="action" href="#">action</a>
+                        <a class="dropdown-item"  routerLink="flight" href="#">flight</a>
+                        <a class="dropdown-item" routerLink="batttle" href="#">batttle-royale</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                <li *ngIf="!isLogin" class="nav-item">
+                    <a class="nav-link active text-white" href="#" aria-current="page" routerLink="login">Login <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li *ngIf="!isLogin" class="nav-item">
+                    <a class="nav-link active" href="#" aria-current="page" routerLink="register">Join Free<span class="visually-hidden">(current)</span></a>
+                </li>
+                <li *ngIf="isLogin" class="nav-item ">
+                    <a (click)="logOut()" class="nav-link active cursor-pointer logout text-primary">Log Out</a>
+                </li>
+            </ul>
+
+        </div>
+  </div>
+</nav>
+

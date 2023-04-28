@@ -1,0 +1,29 @@
+<div class="boody">
+    <header class="header">
+        <h1>Find & track the best <span>free-to-play</span> games!</h1>
+    <p>Track what you've played and search for what to play next! Plus get free premium loot!</p>
+    <button class="btnheader cursor-pointer"><a href="../all">Browse Games</a></button>
+    </header>
+    <div class="container text my-5">
+        <div class="icon"><i _ngcontent-uch-c8="" class="fas fa-robot mr-2 "></i></div>
+        <h3 class="p-2">Personalized Recommendations</h3>
+    </div>
+
+          <div class="container card cursor-pointer" >
+            <div class="row">
+                <div *ngFor="let product of games" class="col-md-4">
+                    <!-- <a [routerLink]="['/gamedetails']"></a> -->
+                    <div class="product card-body">
+                        <a  [routerLink]="['/gamedetails',product.id]">
+                        <img class="w-100 card-img-top" src={{product.thumbnail}} alt="">
+                        <div class="body-card p-3">
+                            <h4 class="h4 card-text">{{product.title.split(' ').slice(0,2).join(' ')}}</h4>
+                            <a href="#" class="btn btn-primary">Free</a>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>

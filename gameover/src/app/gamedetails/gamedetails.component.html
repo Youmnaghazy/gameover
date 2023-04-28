@@ -1,0 +1,85 @@
+<!-- <div *ngFor="let product of gamedetails" class="col-md-4"> -->
+<div class="boody">
+    <header>
+       <div class="layer">
+        <div class="container header">
+            <div class="container details row pt-5">
+                <div class="left col-md-4">
+                    <!-- <video _ngcontent-uch-c6="" loop="" muted="" class="w-100 top-0 rounded-2 position-relative"
+                     autoplay=""><source _ngcontent-uch-c6="" type="video/webm" src="{https://www.freetogame.com/g/365/videoplayback.webm}}">
+                    </video> -->
+                    <img class="w-100 card-img-top" src={{gamedetails.thumbnail}} alt="">
+                    <div class="btns d-flex row p-3">
+                        <div class=" col-md-3"><button class="w-100 botton ">FREE</button></div>
+                        <div class="icona d-flex col-md-9">
+                            <button class=" w-100 btn2"><a href="{{gamedetails.freetogame_profile_url}}">PLAY NOW<i class="fas fa-sign-out-alt p-1"></i></a></button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="right col-md-8">
+                    <h1 class="">{{gamedetails.title}}</h1>
+                    <h5 class="">About {{gamedetails.title}}</h5>
+                    <p class="">{{gamedetails.description}}</p>
+                    <h5>Minimum System Requirements</h5>
+                    <p class="py-1 fs-6"><strong>graphics : </strong> {{gamedetails.minimum_system_requirements.graphics}}</p>
+                    <p class="py-1 fs-6"><strong>memory : </strong> {{gamedetails.minimum_system_requirements.memory}}</p>
+                    <p class="py-1 fs-6"><strong>os : </strong> {{gamedetails.minimum_system_requirements.os}}</p>
+                    <p class="py-1 fs-6"><strong>processor : </strong> {{gamedetails.minimum_system_requirements.processor}}</p>
+                    <p class="py-1 fs-6"><strong>storage : </strong> {{gamedetails.minimum_system_requirements.storage}}</p>
+                    <h3 class="pb-3 pt-3">{{gamedetails.title}} Screenshots</h3>
+                    <div class="slider">
+                        <owl-carousel-o [options]="customOptions">
+                            <ng-container *ngFor="let img of gamedetails.screenshots">
+                              <ng-template carouselSlide >
+                                <img [src]="img.image" >
+                              </ng-template>
+                            </ng-container>
+                        
+                          </owl-carousel-o>
+                    </div>
+                    <h2 class="pt-3 pb-3">Additional Information</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="text-muted">Title</span>
+                            <p>{{gamedetails.title}}</p>
+
+                        </div>
+                        <div class="col-md-4">
+                            <span class="text-muted">Developer</span>
+                            <p>{{gamedetails.developer}}</p>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="text-muted">Publisher</span>
+                            <p>{{gamedetails.publisher}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="text-muted">Release Date</span>
+                            <p>{{gamedetails.release_date}}</p>
+
+                        </div>
+                        <div class="col-md-4">
+                            <span class="text-muted">Genre</span>
+                            <p class="">{{gamedetails.genre}}</p>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="text-muted">Platform</span>
+                            <p><i class="fab fa-windows me-1"></i>{{gamedetails.platform}}</p>
+                        </div>
+                    </div>
+                    
+
+</div>
+                
+            
+            </div>
+        </div>
+       
+       </div>
+    </header>
+    <div class="boody">
+
+    </div>
+</div>
