@@ -1,1 +1,45 @@
-<p>flight works!</p>
+<div class="header">
+
+
+    <div class="container card cursor-pointer" >
+      <div class="row">
+          <div *ngFor="let product of games|slice:0:count*20"class="col-md-3">
+              <!-- <a [routerLink]="['/gamedetails']"></a> -->
+              <div class="product card-body">
+                  <a  [routerLink]="['/gamedetails',product.id]">
+                  <img class="w-100 card-img-top" src={{product.thumbnail}} alt="">
+                  <div class="body-card p-3">
+                      <div class="head">
+                          <h4 class="h4 card-text">{{product.title.split(' ').slice(0,1).join(' ')}}</h4>
+                          <a href="" class="btn btn-primary">Free</a>
+                      </div>
+
+                      <p class="font">{{product.short_description.split(' ').slice(0,4).join(' ')}}</p>
+                      <div class="icons">
+                          <div class="left">
+                             <i  class="fas fa-plus-square"></i>
+                          </div>
+                          <div class="right">
+                              <button class="btnn">{{product.genre}}</button>
+                              <i class="fab fa-windows p-2 "></i>
+                          </div>
+                      </div>
+                  </div>
+                  
+
+                  </a>
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+
+<div class="seemore">
+  <button class="" *ngIf="count*4<games.length" (click)="count=count+1">More Games></button>
+</div>
+</div>

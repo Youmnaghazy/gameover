@@ -7,13 +7,13 @@ import { ProductsService } from '../products.service';
   styleUrls: ['./sortpopularity.component.css']
 })
 export class SortpopularityComponent implements OnInit {
-  count:number=0;
+  count:number=1;
   games:any[] = [];
   constructor(private _ProductServices:ProductsService){}
 
 ngOnInit(): void {
   this._ProductServices.getsortpopularity().subscribe({
-    next:(response)=> this.games = response.slice(0,20)
+    next:(response)=> this.games = response
     
   })
 }

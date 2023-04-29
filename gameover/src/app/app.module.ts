@@ -54,7 +54,7 @@ import { FlightComponent } from './flight/flight.component';
     CatzombieComponent,
     ActionComponent,
     CatrpgComponent,
-    FlightComponent
+    FlightComponent,
   ],
   imports: [
     BrowserModule,

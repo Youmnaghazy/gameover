@@ -23,8 +23,9 @@ import { CatrpgComponent } from './catrpg/catrpg.component';
 import { ActionComponent } from './action/action.component';
 import { FlightComponent } from './flight/flight.component';
 
+
 const routes: Routes = [
-  {path:'',redirectTo:'register',pathMatch:'full'},
+  {path:'',redirectTo:'login',pathMatch:'full'},
   {path:'home',canActivate:[AuthGuard],component:HomeComponent},    
   {path:'all',canActivate:[AuthGuard],component:AllComponent},
   {path:'platforms',canActivate:[AuthGuard],component:PlatformsComponent},

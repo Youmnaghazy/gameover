@@ -42,7 +42,7 @@
                         <a class="dropdown-item" routerLink="rpg"  href="#">action-rpg</a>
                         <a class="dropdown-item"  routerLink="action" href="#">action</a>
                         <a class="dropdown-item"  routerLink="flight" href="#">flight</a>
-                        <a class="dropdown-item" routerLink="batttle" href="#">batttle-royale</a>
+                        <a class="dropdown-item" routerLink="rpg" href="#">batttle-royale</a>
                     </div>
                 </li>
             </ul>
@@ -51,7 +51,7 @@
                     <a class="nav-link active text-white" href="#" aria-current="page" routerLink="login">Login <span class="visually-hidden">(current)</span></a>
                 </li>
                 <li *ngIf="!isLogin" class="nav-item">
-                    <a class="nav-link active" href="#" aria-current="page" routerLink="register">Join Free<span class="visually-hidden">(current)</span></a>
+                    <a class="nav-link active text-primary logout" href="#" aria-current="page" routerLink="register">Join Free<span class="visually-hidden">(current)</span></a>
                 </li>
                 <li *ngIf="isLogin" class="nav-item ">
                     <a (click)="logOut()" class="nav-link active cursor-pointer logout text-primary">Log Out</a>

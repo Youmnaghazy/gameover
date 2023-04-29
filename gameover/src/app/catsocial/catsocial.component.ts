@@ -7,12 +7,12 @@ import { ProductsService } from '../products.service';
   styleUrls: ['./catsocial.component.css']
 })
 export class CatsocialComponent implements OnInit{
-  count:number=0;
+  count:number=1;
   games:any[] = [];
   constructor(private _ProductServices:ProductsService){}
   ngOnInit(): void {
     this._ProductServices.getcatsocial().subscribe({
-      next:(response)=> this.games = response.slice(0,20)
+      next:(response)=> this.games = response
       
     })
   }
